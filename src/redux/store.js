@@ -1,5 +1,5 @@
 import { applyMiddleware, createStore } from 'redux'
-import reducer from './reducer'
+import reducer from './reducers/index'
 import middleware from './middleware'
 
 // creamos el store
@@ -7,3 +7,5 @@ import middleware from './middleware'
 const store = createStore(reducer, undefined, applyMiddleware(middleware))
 
 export default store
+
+// aqui solo vamos a importar el reducer principal que es el index.js dentro de la carptea de reducer

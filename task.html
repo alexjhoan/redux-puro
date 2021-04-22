@@ -8,10 +8,18 @@
   <title>Document</title>
 </head>
 <body>
+  <li id="item" class="list-group-item d-none">
+    <input type="checkbox" class="form-check-input">
+    <span></span>
+    <button type="button" class="float-end btn btn-outline-danger">
+      borrar
+    </button>
+  </li>
   <div class="container">
     <div class="row">
       <div class="offset-md-3 col-md-6">
-        <h3>hola</h3>
+        <input type="text" id="txtNuevaNota" class="form-control my-4" placeholder="agregar nueva nota">
+        <ul id="itemList" class="list-group list-group-flush"></ul>
       </div>
     </div>
   </div>
